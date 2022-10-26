@@ -15,6 +15,9 @@ spec:
    image: yanivomc/spring-music:latest
    ports: 
    - containerPort: 80
+   volumeMounts:
+   - mountPath: /storage
+     name: app-storage
  volumes:
   - name: app-storage
     hostPath:
